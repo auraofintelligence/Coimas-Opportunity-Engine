@@ -12,7 +12,7 @@ Initial portfolio is an editorial research draft, not founder-approved legal or 
 
 ## Initial portfolio
 
-18 distinct initiatives including one founder-mobility research profile, 31 applicable engagement pathways and 103 project-specific requirements. The portfolio is editable in `data/portfolio.json`. Each initiative has a stable identifier independent of repository names, a stage, an anchor, public evidence sources and scoped engagement requirements. No matching entry is created solely because a repository exists.
+20 distinct initiatives including one founder-mobility research profile, 38 applicable engagement pathways and 128 project-specific requirements. The portfolio is editable in `data/portfolio.json`. Each initiative has a stable identifier independent of repository names, a stage, an anchor, public evidence sources and scoped engagement requirements. No matching entry is created solely because a repository exists.
 
 The first version includes explicit research hypotheses for selected jurisdictions. They are not confirmed opportunities. Required gates must be supported by reviewed evidence, weighted reviewed coverage must be at least 60%, and conflicting observations block ranking. A source listing is not a legal finding.
 
@@ -33,3 +33,7 @@ Keep unpublished strategies and personal plans off the public repository. Browse
 ## Public source licence
 
 See [LICENCE.md](LICENCE.md).
+
+## Site architecture
+
+Nine dedicated pages: home, portfolio, project explorer, jurisdiction explorer, side-by-side comparison, budget planner, research queue, methodology and site map. Shareable query parameters carry only public initiative, pathway and jurisdiction selections. Private review observations are deliberately kept in memory and transferred only through a user-controlled JSON export/import. Each budget workspace clearly separates source-backed items from user planning allowances.

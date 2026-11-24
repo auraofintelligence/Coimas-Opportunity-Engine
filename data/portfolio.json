@@ -687,6 +687,182 @@
       ]
     },
     {
+      "id": "gamify-democracy",
+      "title": "Gamify Democracy",
+      "kind": "civic participation and democratic technology",
+      "anchor": "Australia; independent local adaptation internationally",
+      "stage": "Documented initiative and design proposal; website content and current deployment status not independently verified",
+      "summary": "A distinct civic engagement initiative connecting generative AI, gamified participation, accessible public deliberation and the L0-L2 digital twin stack. Sovereign Space Builder provides the proposed Scan, Design, Sim, Do, Share loop for co-designing public spaces. Voluntary contribution recognition through C-Hours remains non-monetary. P4A is a connected Australian civic workbench, not the name or geographic limit of this initiative.",
+      "website": "https://gamifydemocracy.com/",
+      "websiteStatus": "Founder-supplied public domain; contents not verified in this review.",
+      "sourceNotes": [
+        "Local Government Funding Inquiry Submission, section 2.3, Gamify Democracy: A New Model for Civic Engagement. This describes the proposed model rather than a deployed service.",
+        "Linked repositories are related implementation and research evidence, not a claim that any is the source of gamifydemocracy.com.",
+        "The current C-Hour definition supersedes earlier financial reward language."
+      ],
+      "sourceRepos": [
+        {
+          "name": "SSB",
+          "url": "https://github.com/auraofintelligence/SSB"
+        },
+        {
+          "name": "p4a-xyz-cinema",
+          "url": "https://github.com/auraofintelligence/p4a-xyz-cinema"
+        },
+        {
+          "name": "p4a-membership",
+          "url": "https://github.com/auraofintelligence/p4a-membership"
+        },
+        {
+          "name": "C-Hour-introduction",
+          "url": "https://github.com/auraofintelligence/C-Hour-introduction"
+        },
+        {
+          "name": "aura-civic-establishment",
+          "url": "https://github.com/auraofintelligence/aura-civic-establishment"
+        },
+        {
+          "name": "minjerribah-living-twin",
+          "url": "https://github.com/auraofintelligence/minjerribah-living-twin"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Identify civic technology, participatory planning, deliberation and democratic innovation research partners.",
+          "criteria": [
+            {
+              "id": "civic-labs",
+              "pattern": "research-and-enterprise",
+              "question": "Name credible participatory democracy, civic technology, deliberation or urban co-design research groups and their relevant work.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "law",
+              "pattern": "enterprise-establishment",
+              "question": "Identify local research ethics, public consultation, accessibility, election-integrity and personal-data obligations for the proposed research.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "governance",
+              "pattern": "collective-ownership",
+              "question": "Identify locally governed research and community partnerships with clear independent decision-making.",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "ip",
+              "pattern": "intellectual-property",
+              "question": "Check licensing, interoperability and protection of existing software and research IP.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "scope": "global",
+          "objective": "Explore nonpartisan civic co-design and public consultation tools through locally authorised partners, not unauthorised voting infrastructure.",
+          "criteria": [
+            {
+              "id": "authority",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm which local authorities can authorise the proposed consultation, simulation or participatory planning activity and distinguish it from official elections.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "privacy",
+              "pattern": "enterprise-establishment",
+              "question": "Identify applicable privacy, accessibility, transparency, security and electoral law requirements for the precise activity.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify local public-interest technology or civic institutions willing to co-design a lawful pilot.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "funding",
+              "pattern": "financial-infrastructure",
+              "question": "Identify realistic funding, procurement, administration and pilot cost evidence without assuming public approval.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "community",
+          "scope": "global",
+          "objective": "Explore locally led voluntary civic participation, community stewardship and co-design.",
+          "criteria": [
+            {
+              "id": "local-form",
+              "pattern": "collective-ownership",
+              "question": "Find suitable independent associations or community governance arrangements with local authority and consent.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "participation",
+              "pattern": "enterprise-establishment",
+              "question": "Check permitted civic, consultation and volunteer activities, including the boundary between voluntary contribution and employment.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "recognition",
+              "pattern": "financial-infrastructure",
+              "question": "Confirm nonmonetary verified volunteer-hour recognition is distinct from payments, vote incentives, wages and financial instruments.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "local-partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify community-led organisations and documented participatory design programmes.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "education",
+          "scope": "global",
+          "objective": "Explore civic literacy and democratic simulation programmes with qualified educational partners.",
+          "criteria": [
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Identify relevant civic education, public administration and digital literacy partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "education-law",
+              "pattern": "enterprise-establishment",
+              "question": "Check educational delivery, age-appropriate design, privacy and safeguarding obligations.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "curriculum",
+              "pattern": "intellectual-property",
+              "question": "Verify local adaptation, language and licensing requirements for teaching materials.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "gajra-earth",
       "title": "GAJRA Earth",
       "kind": "global volunteer association and cultural programme",
@@ -1369,6 +1545,135 @@
       ]
     },
     {
+      "id": "ready-set-co-op",
+      "title": "ready SET Co-op",
+      "kind": "sustainable employment and training cooperative",
+      "anchor": "Minjerribah, Australia; independent local replication elsewhere",
+      "stage": "Proposed cooperative and public participation system",
+      "website": "https://ready-setco.auraofintelligence.workers.dev/index.html",
+      "websiteStatus": "Creator-supplied public participation address, corroborated by the related cultural intelligence node and noticeboard READMEs.",
+      "summary": "A proposed cooperative connecting work, learning, media, shared equipment, local services and locally governed compute. International engagement is about independent cooperative adaptation and knowledge exchange, not transferring control of Minjerribah assets or assuming the cooperative has been formed.",
+      "sourceRepos": [
+        {
+          "name": "ready-set-co-op-trust-hub",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-trust-hub"
+        },
+        {
+          "name": "ready-set-co-op-hyperlocal-media",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-hyperlocal-media"
+        },
+        {
+          "name": "ready-set-co-op-cultural-intelligence-node",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node"
+        },
+        {
+          "name": "straddie-noticeboard-cloudflare",
+          "url": "https://github.com/auraofintelligence/straddie-noticeboard-cloudflare"
+        },
+        {
+          "name": "C-Hour-introduction",
+          "url": "https://github.com/auraofintelligence/C-Hour-introduction"
+        },
+        {
+          "name": "mutual-futures",
+          "url": "https://github.com/auraofintelligence/mutual-futures"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "community",
+          "scope": "global",
+          "objective": "Investigate locally governed cooperative formation, reciprocal learning and partnership structures.",
+          "criteria": [
+            {
+              "id": "cooperative-law",
+              "pattern": "collective-ownership",
+              "question": "Identify legal cooperative forms, minimum member requirements and foreign participation limits; preserve independent member governance.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "employment",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm employment, training, volunteer and workplace safety obligations for the intended programme.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify suitable local cooperatives, community organisations and training institutions.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "finance",
+              "pattern": "financial-infrastructure",
+              "question": "Identify applicable funding, accounting, tax and compliance requirements, keeping C-Hours nonmonetary.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "education",
+          "scope": "global",
+          "objective": "Develop locally adapted sustainable employment and practical training collaboration.",
+          "criteria": [
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Identify vocational, technical and community training partners with relevant capabilities.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "training-law",
+              "pattern": "enterprise-establishment",
+              "question": "Verify accreditation, permissions, safeguarding and workplace requirements for specific activities.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "learning-ip",
+              "pattern": "intellectual-property",
+              "question": "Check curriculum licensing and local adaptation conditions.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Study replicable community-owned media, noticeboard, equipment-sharing and compute infrastructure.",
+          "criteria": [
+            {
+              "id": "model",
+              "pattern": "research-and-enterprise",
+              "question": "Identify documented local shared infrastructure and community technology programmes.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "data",
+              "pattern": "enterprise-establishment",
+              "question": "Verify consent, data governance and relevant technical or infrastructure regulation.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "member-control",
+              "pattern": "collective-ownership",
+              "question": "Identify locally accountable membership and ownership arrangements.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "oceania-wellbeing",
       "title": "Oceania healthy co-operative pathways",
       "kind": "regional community wellbeing research",
@@ -1506,7 +1811,7 @@
   "withheld": [
     {
       "name": "Australian civic and political systems",
-      "reason": "Australian policy jurisdiction; independent overseas cultural/civic partnerships require their own purpose and consent. Do not rank P4A for offshore incorporation."
+      "reason": "P4A remains Australian in political scope. Gamify Democracy is separately included for lawful, locally governed civic research, education and nonpartisan co-design; no foreign party campaigning or unauthorised election operation is assumed."
     },
     {
       "name": "Minjerribah facilities, clubs and locally held assets",
@@ -1681,6 +1986,42 @@
       "placeId": "fj",
       "placeName": "Fiji",
       "question": "Research locally governed pilots, local consent and health rules.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "gamify-democracy",
+      "pathway": "research",
+      "placeId": "ee",
+      "placeName": "Estonia",
+      "question": "Investigate named digital government and civic technology research partners for lawful local co-design and consultation.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "gamify-democracy",
+      "pathway": "research",
+      "placeId": "tw",
+      "placeName": "Taiwan",
+      "question": "Investigate documented participatory digital democracy and civic technology research groups, without assuming an invitation or deployment approval.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "gamify-democracy",
+      "pathway": "research",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Investigate locally led participatory planning and civic consultation partnerships, with community and Indigenous authority respected.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "ready-set-co-op",
+      "pathway": "community",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Investigate independent local cooperative formation and vocational partnership models; local communities retain their own decisions.",
       "status": "research-lead",
       "reviewedOn": "2026-11-24"
     }
