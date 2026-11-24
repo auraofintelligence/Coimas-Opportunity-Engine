@@ -1,0 +1,1688 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-24",
+  "status": "Initial source-based editorial research draft; not founder-approved incorporation decisions. Public projects only. No automatically inferred project eligibility.",
+  "scopes": {
+    "global": {
+      "description": "International research candidates; eligibility still needs evidence."
+    },
+    "oceania": {
+      "description": "Explicit regional candidate list; jurisdiction/territory IDs are intersected with the live spine.",
+      "placeIds": [
+        "au",
+        "nz",
+        "fj",
+        "pg",
+        "sb",
+        "vu",
+        "ws",
+        "to",
+        "ki",
+        "tv",
+        "nr",
+        "pw",
+        "fm",
+        "mh",
+        "ck",
+        "nu",
+        "as",
+        "gu",
+        "mp",
+        "nc",
+        "pf",
+        "wf",
+        "tk",
+        "pn",
+        "nf",
+        "um"
+      ]
+    }
+  },
+  "pathwayLabels": {
+    "digital-identity": "Digital identity",
+    "personal-residency": "Personal residency",
+    "citizenship": "Citizenship",
+    "incorporation": "Company establishment",
+    "research": "Research partnership",
+    "manufacturing": "Manufacturing and supply",
+    "deployment": "Product or service deployment",
+    "education": "Education",
+    "community": "Community and collective ownership",
+    "cultural-collaboration": "Cultural collaboration",
+    "funding": "Funding and investment"
+  },
+  "projects": [
+    {
+      "id": "founder-mobility",
+      "title": "Founder mobility and digital identity",
+      "kind": "personal research",
+      "anchor": "Australia",
+      "stage": "Research",
+      "summary": "Compare government-backed credentials, lawful residence and international administration separately; no assumed tax-residency change.",
+      "sourceRepos": [
+        {
+          "name": "world-travel-patterns",
+          "url": "https://github.com/auraofintelligence/world-travel-patterns"
+        },
+        {
+          "name": "global-founder-atlas",
+          "url": "https://github.com/auraofintelligence/global-founder-atlas"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "digital-identity",
+          "scope": "global",
+          "objective": "Obtain a useful sovereign digital credential remotely.",
+          "criteria": [
+            {
+              "id": "foreign-applicant",
+              "pattern": "digital-residency",
+              "question": "Can an Australian nonresident obtain and renew the actual government-backed credential?",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "functions",
+              "pattern": "digital-residency",
+              "question": "What signing, identification, company or government services does the credential actually enable?",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "fees",
+              "pattern": "digital-residency",
+              "question": "What are current issuance, collection and renewal fees, including any mandatory visit?",
+              "gate": false,
+              "weight": 3
+            },
+            {
+              "id": "bank",
+              "pattern": "financial-infrastructure",
+              "question": "Can this applicant qualify for useful banking without an assumed residence right?",
+              "gate": false,
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "id": "personal-residency",
+          "scope": "global",
+          "objective": "Establish lawful residence without unnecessary relocation obligations.",
+          "criteria": [
+            {
+              "id": "route",
+              "pattern": "physical-residency",
+              "question": "Which specific immigration route admits an Australian applicant, and what eligibility conditions apply?",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "presence",
+              "pattern": "physical-residency",
+              "question": "What presence, renewal and retention obligations apply?",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "cost",
+              "pattern": "physical-residency",
+              "question": "What are the official application and ongoing costs?",
+              "gate": false,
+              "weight": 3
+            },
+            {
+              "id": "tax",
+              "pattern": "financial-infrastructure",
+              "question": "What tax residence and reporting consequences require advice?",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "citizenship",
+          "scope": "global",
+          "objective": "Understand optional long-term naturalisation without conflating it with residency.",
+          "criteria": [
+            {
+              "id": "naturalisation",
+              "pattern": "citizenship",
+              "question": "What naturalisation route and minimum lawful residence apply?",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "dual",
+              "pattern": "citizenship",
+              "question": "Is retention of Australian citizenship permitted by the other country?",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "obligations",
+              "pattern": "citizenship",
+              "question": "What language, presence, tax or other legal obligations need review?",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-platform",
+      "title": "Aura of Intelligence — cognitive platform",
+      "kind": "software and foundational technology",
+      "anchor": "Australia",
+      "stage": "Prototype and architecture",
+      "summary": "Personal digital twin, nested horn tori, pattern-based AI orchestration and controlled public/private/secret access. The current studio is not the completed encrypted engine.",
+      "sourceRepos": [
+        {
+          "name": "auraofintelligence.github.io",
+          "url": "https://github.com/auraofintelligence/auraofintelligence.github.io"
+        },
+        {
+          "name": "aura-horn-torus",
+          "url": "https://github.com/auraofintelligence/aura-horn-torus"
+        },
+        {
+          "name": "aura-matrix-studio",
+          "url": "https://github.com/auraofintelligence/aura-matrix-studio"
+        },
+        {
+          "name": "aura-genesis-observer-studio",
+          "url": "https://github.com/auraofintelligence/aura-genesis-observer-studio"
+        },
+        {
+          "name": "aura-data-mapping",
+          "url": "https://github.com/auraofintelligence/aura-data-mapping"
+        },
+        {
+          "name": "aura-spatial-perception",
+          "url": "https://github.com/auraofintelligence/aura-spatial-perception"
+        },
+        {
+          "name": "aura-scan-pipeline",
+          "url": "https://github.com/auraofintelligence/aura-scan-pipeline"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "incorporation",
+          "scope": "global",
+          "objective": "Evaluate a software distribution or development subsidiary, retaining separately governed IP.",
+          "criteria": [
+            {
+              "id": "company",
+              "pattern": "enterprise-establishment",
+              "question": "Can an Australian founder establish and administer a software company remotely with acceptable ownership rules?",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "data",
+              "pattern": "enterprise-establishment",
+              "question": "Identify binding AI, personal-data and health-data rules and the permitted cross-border architecture.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "ip",
+              "pattern": "intellectual-property",
+              "question": "Can Australian-owned software and architecture be licensed to the subsidiary on defensible terms?",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "compliance-cost",
+              "pattern": "financial-infrastructure",
+              "question": "Establishment, accounting, banking, tax and recurring reporting costs for this specific structure.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find AI, XR, HCI and privacy-engineering collaboration.",
+          "criteria": [
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Name relevant laboratories with demonstrated XR/HCI, personal AI or cognitive architecture capability.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "consent-data",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm lawful consent, research ethics and personal-data handling.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "research-ip",
+              "pattern": "intellectual-property",
+              "question": "Identify acceptable research collaboration and background-IP terms.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "scope": "global",
+          "objective": "Evaluate controlled software distribution rather than medical claims.",
+          "criteria": [
+            {
+              "id": "data-legal",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm local data, software and AI obligations for this specific nonclinical product.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "language",
+              "pattern": "research-and-enterprise",
+              "question": "Find local integration partners and language/accessibility capability.",
+              "gate": false,
+              "weight": 3
+            },
+            {
+              "id": "licence",
+              "pattern": "intellectual-property",
+              "question": "Identify licence enforceability and local support obligations.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-wearables",
+      "title": "Aura Direct Hardware — wearable and edge devices",
+      "kind": "hardware product research",
+      "anchor": "Australia",
+      "stage": "Concept and component research",
+      "summary": "Wearable AI interface, sensors, local computation, receiver and personal-device integration; related hardware branches grouped together.",
+      "sourceRepos": [
+        {
+          "name": "aura-direct-hardware",
+          "url": "https://github.com/auraofintelligence/aura-direct-hardware"
+        },
+        {
+          "name": "aura-spatial-perception",
+          "url": "https://github.com/auraofintelligence/aura-spatial-perception"
+        },
+        {
+          "name": "aura-scan-pipeline",
+          "url": "https://github.com/auraofintelligence/aura-scan-pipeline"
+        },
+        {
+          "name": "aura-verse-box",
+          "url": "https://github.com/auraofintelligence/aura-verse-box"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "manufacturing",
+          "scope": "global",
+          "objective": "Identify suitable electronics prototyping, semiconductor and wearable suppliers.",
+          "criteria": [
+            {
+              "id": "suppliers",
+              "pattern": "research-and-enterprise",
+              "question": "Name capable contract manufacturers or R&D partners for low-power wearable electronics, sensors and edge compute.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "radio-safety",
+              "pattern": "enterprise-establishment",
+              "question": "Identify electrical, radio, consumer-product and battery safety compliance for the intended device.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "design-ip",
+              "pattern": "intellectual-property",
+              "question": "Verify protection of designs, firmware and tooling IP and supplier contract enforceability.",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Compare prototype tooling, minimum order, testing, landed cost and payment terms.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Explore hardware/software integration and human-device interaction.",
+          "criteria": [
+            {
+              "id": "labs",
+              "pattern": "research-and-enterprise",
+              "question": "Name embedded AI, sensor fusion or HCI research groups.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "privacy",
+              "pattern": "enterprise-establishment",
+              "question": "Identify lawful biometric and health-data research requirements.",
+              "gate": true,
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-geode",
+      "title": "Aura Genesis and Geode chambers",
+      "kind": "regulated hardware and research programme",
+      "anchor": "Australia",
+      "stage": "Concept, research and procurement planning",
+      "summary": "Seated HBOT retrofit and staged geopolymer, crystalline and future Geode pathways; no clinical efficacy or device approval is assumed.",
+      "sourceRepos": [
+        {
+          "name": "aura-genesis-geode-atlas",
+          "url": "https://github.com/auraofintelligence/aura-genesis-geode-atlas"
+        },
+        {
+          "name": "aura-genesis-observer-studio",
+          "url": "https://github.com/auraofintelligence/aura-genesis-observer-studio"
+        },
+        {
+          "name": "aura-geode",
+          "url": "https://github.com/auraofintelligence/aura-geode"
+        },
+        {
+          "name": "geode-vibe",
+          "url": "https://github.com/auraofintelligence/geode-vibe"
+        },
+        {
+          "name": "extreme-matter-atlas",
+          "url": "https://github.com/auraofintelligence/extreme-matter-atlas"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "manufacturing",
+          "scope": "global",
+          "objective": "Explore certified pressure-vessel supply and advanced material research separately.",
+          "criteria": [
+            {
+              "id": "pressure",
+              "pattern": "enterprise-establishment",
+              "question": "Identify applicable pressure-vessel, oxygen/fire safety and medical-device conformity standards for the intended chamber.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "supplier",
+              "pattern": "research-and-enterprise",
+              "question": "Name pressure-vessel manufacturers and qualified test facilities with relevant certification.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "materials",
+              "pattern": "research-and-enterprise",
+              "question": "Identify credible material-science partners for proposed experimental chamber materials.",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Obtain engineering, independent testing, certification and procurement cost estimates.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find ethically approved clinical, recovery and human-computer interaction research partners.",
+          "criteria": [
+            {
+              "id": "ethics",
+              "pattern": "enterprise-establishment",
+              "question": "Identify clinical research authorisation, ethics and safety oversight for the intended protocol.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "clinical",
+              "pattern": "research-and-enterprise",
+              "question": "Name relevant hyperbaric medicine and controlled clinical research institutions.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "evidence",
+              "pattern": "research-and-enterprise",
+              "question": "Identify evidence gaps and a feasible evaluation protocol; do not infer efficacy from research interest.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-care",
+      "title": "Aura adaptive whole-of-life support",
+      "kind": "care service and clinical software research",
+      "anchor": "Australia",
+      "stage": "Public proposal",
+      "summary": "Adult dementia, disability and ageing support; assistive software and care delivery are distinct from regulated clinical pathways.",
+      "sourceRepos": [
+        {
+          "name": "aura-whole-of-life",
+          "url": "https://github.com/auraofintelligence/aura-whole-of-life"
+        },
+        {
+          "name": "aura-dementia",
+          "url": "https://github.com/auraofintelligence/aura-dementia"
+        },
+        {
+          "name": "Anglican-Diocese-82-Claytons-Amity",
+          "url": "https://github.com/auraofintelligence/Anglican-Diocese-82-Claytons-Amity"
+        },
+        {
+          "name": "aura-verse-box",
+          "url": "https://github.com/auraofintelligence/aura-verse-box"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Collaborate on memory support, accessible technology and ageing research.",
+          "criteria": [
+            {
+              "id": "clinics",
+              "pattern": "research-and-enterprise",
+              "question": "Name appropriate dementia, disability or gerontology research organisations.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "safeguards",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm participant consent, capacity, health data and research ethics rules.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "evidence",
+              "pattern": "research-and-enterprise",
+              "question": "Identify an evaluation design and realistic pilot funding pathway.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "scope": "global",
+          "objective": "Explore country-specific adult support pilots through qualified local providers.",
+          "criteria": [
+            {
+              "id": "care-regulation",
+              "pattern": "enterprise-establishment",
+              "question": "Identify provider registration, professional scope, medical-device and care standards applicable to the proposed service.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "health-data",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm privacy, cross-border health data and safeguarding obligations.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "payer",
+              "pattern": "financial-infrastructure",
+              "question": "Identify actual eligible funding and reimbursement arrangements; do not assume Australian schemes transfer.",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify licensed local providers and co-design partners.",
+              "gate": false,
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-child-services",
+      "title": "Aura support for children and young people",
+      "kind": "safeguarded research and care programme",
+      "anchor": "Australia",
+      "stage": "Public proposal",
+      "summary": "Separate child-services research pathway requiring age-appropriate design, institutional approval and independent safeguarding.",
+      "sourceRepos": [
+        {
+          "name": "aura-child-services",
+          "url": "https://github.com/auraofintelligence/aura-child-services"
+        },
+        {
+          "name": "aura-verse-box",
+          "url": "https://github.com/auraofintelligence/aura-verse-box"
+        },
+        {
+          "name": "aura-whole-of-life",
+          "url": "https://github.com/auraofintelligence/aura-whole-of-life"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Investigate child-safe research partnerships, not direct recruitment or unapproved deployment.",
+          "criteria": [
+            {
+              "id": "safeguarding",
+              "pattern": "enterprise-establishment",
+              "question": "Identify child protection, guardian consent, age-appropriate privacy and institutional ethics requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Name qualified child welfare, paediatric or youth research institutions.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "data",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm restricted data access, retention and independently reviewed risk controls.",
+              "gate": true,
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aura-education",
+      "title": "Aura teacher development and training",
+      "kind": "education programme",
+      "anchor": "Australia",
+      "stage": "Public curriculum proposal",
+      "summary": "Sixty-day teacher-development pathway and portable personal AI learning tools.",
+      "sourceRepos": [
+        {
+          "name": "aura-teacher-training",
+          "url": "https://github.com/auraofintelligence/aura-teacher-training"
+        },
+        {
+          "name": "aura-genesis-geode-atlas",
+          "url": "https://github.com/auraofintelligence/aura-genesis-geode-atlas"
+        },
+        {
+          "name": "aura-genesis-observer-studio",
+          "url": "https://github.com/auraofintelligence/aura-genesis-observer-studio"
+        },
+        {
+          "name": "infinity-creative-workshop",
+          "url": "https://github.com/auraofintelligence/infinity-creative-workshop"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "education",
+          "scope": "global",
+          "objective": "Find teacher education and adult professional-development partners.",
+          "criteria": [
+            {
+              "id": "education-partners",
+              "pattern": "research-and-enterprise",
+              "question": "Name teacher-training institutions or appropriate adult education partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "accreditation",
+              "pattern": "enterprise-establishment",
+              "question": "Check accreditation, permitted activity, safeguarding and local professional requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "curriculum",
+              "pattern": "intellectual-property",
+              "question": "Confirm curriculum licensing, local language adaptation and rights.",
+              "gate": false,
+              "weight": 3
+            },
+            {
+              "id": "support",
+              "pattern": "financial-infrastructure",
+              "question": "Check institutional or research funding and costs.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gajra-earth",
+      "title": "GAJRA Earth",
+      "kind": "global volunteer association and cultural programme",
+      "anchor": "Australia; local chapters independently governed",
+      "stage": "Proposed association and public practice",
+      "summary": "Joyful Responsible Abundance, voluntary collaboration and cultural events; GAJRA public hub, inherited build and Infinity spine are complementary.",
+      "sourceRepos": [
+        {
+          "name": "GAJRA-earth-infinity",
+          "url": "https://github.com/auraofintelligence/GAJRA-earth-infinity"
+        },
+        {
+          "name": "gajra-earth-claude-build",
+          "url": "https://github.com/auraofintelligence/gajra-earth-claude-build"
+        },
+        {
+          "name": "gajra-earth-public-hub",
+          "url": "https://github.com/auraofintelligence/gajra-earth-public-hub"
+        },
+        {
+          "name": "GAJRA_Earth-Space-AI_Summit",
+          "url": "https://github.com/auraofintelligence/GAJRA_Earth-Space-AI_Summit"
+        },
+        {
+          "name": "outreach-cms",
+          "url": "https://github.com/auraofintelligence/outreach-cms"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "community",
+          "scope": "global",
+          "objective": "Investigate locally governed voluntary chapters and public-benefit partnerships.",
+          "criteria": [
+            {
+              "id": "entity",
+              "pattern": "collective-ownership",
+              "question": "Identify eligible nonprofit or association structures, local member/director requirements and foreign participation.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "funds",
+              "pattern": "financial-infrastructure",
+              "question": "Check charity fundraising, donor reporting, remittances and banking without assuming charitable status.",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "local",
+              "pattern": "research-and-enterprise",
+              "question": "Name community-led organisations willing and appropriate for partnership.",
+              "gate": false,
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "id": "cultural-collaboration",
+          "scope": "global",
+          "objective": "Develop local-led art, music and educational collaboration.",
+          "criteria": [
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify credible local festival, university and arts partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "permission",
+              "pattern": "enterprise-establishment",
+              "question": "Check permits and public event or volunteer activity rules.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "rights",
+              "pattern": "intellectual-property",
+              "question": "Check performance, recording, cultural authority and rights agreements.",
+              "gate": true,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "queens-enterprise",
+      "title": "500 Queens venture development",
+      "kind": "enterprise leadership and investment proposal",
+      "anchor": "Australia",
+      "stage": "Public proposal; not a licensed fund",
+      "summary": "Women-led enterprise development, leadership and collaboration across multiple ventures.",
+      "sourceRepos": [
+        {
+          "name": "500-Queens-VC-2026",
+          "url": "https://github.com/auraofintelligence/500-Queens-VC-2026"
+        },
+        {
+          "name": "mutual-futures",
+          "url": "https://github.com/auraofintelligence/mutual-futures"
+        },
+        {
+          "name": "sovereign-capacity-lab",
+          "url": "https://github.com/auraofintelligence/sovereign-capacity-lab"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find enterprise leadership and incubation partnerships.",
+          "criteria": [
+            {
+              "id": "incubators",
+              "pattern": "research-and-enterprise",
+              "question": "Name eligible accelerators, universities, leadership programmes and local founders.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "participation",
+              "pattern": "enterprise-establishment",
+              "question": "Check permitted cross-border enterprise mentoring and programme participation.",
+              "gate": true,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "funding",
+          "scope": "global",
+          "objective": "Explore lawful funding partnerships, not unlicensed fund solicitation.",
+          "criteria": [
+            {
+              "id": "licensing",
+              "pattern": "financial-infrastructure",
+              "question": "Identify investment/fund management, promotion, investor and licensing requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "vehicle",
+              "pattern": "enterprise-establishment",
+              "question": "Verify suitable legal structures, beneficial ownership and restrictions.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "capital",
+              "pattern": "research-and-enterprise",
+              "question": "Identify eligible, currently accessible funding or qualified investors.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "costs",
+              "pattern": "financial-infrastructure",
+              "question": "Estimate setup, compliance, custody and audit costs for actual proposed structure.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coimas-travel",
+      "title": "Travel Oracle and jurisdiction intelligence",
+      "kind": "software and travel research",
+      "anchor": "Australia",
+      "stage": "Working research platforms",
+      "summary": "Travel planning, activity compliance and mobility intelligence; use World Travel Patterns as factual upstream and Global Founder Atlas as complementary research.",
+      "sourceRepos": [
+        {
+          "name": "world-travel-patterns",
+          "url": "https://github.com/auraofintelligence/world-travel-patterns"
+        },
+        {
+          "name": "global-founder-atlas",
+          "url": "https://github.com/auraofintelligence/global-founder-atlas"
+        },
+        {
+          "name": "strange-but-true-travel-oracle",
+          "url": "https://github.com/auraofintelligence/strange-but-true-travel-oracle"
+        },
+        {
+          "name": "Australian-visa-activity-atlas",
+          "url": "https://github.com/auraofintelligence/Australian-visa-activity-atlas"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "incorporation",
+          "scope": "global",
+          "objective": "Explore a software publishing and licensing vehicle only where it adds real benefit.",
+          "criteria": [
+            {
+              "id": "company",
+              "pattern": "enterprise-establishment",
+              "question": "Verify remote software company setup, ownership and administrative requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "travel-data",
+              "pattern": "enterprise-establishment",
+              "question": "Check data protection and travel-advice/business classification obligations.",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "tax",
+              "pattern": "financial-infrastructure",
+              "question": "Compare actual annual compliance and banking costs.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "ip",
+              "pattern": "intellectual-property",
+              "question": "Check licensing and source-data reuse obligations.",
+              "gate": true,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "scope": "global",
+          "objective": "Find trustworthy data and travel research collaborators.",
+          "criteria": [
+            {
+              "id": "sources",
+              "pattern": "research-and-enterprise",
+              "question": "Identify reliable travel, migration, consular and educational data partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "rights",
+              "pattern": "intellectual-property",
+              "question": "Confirm lawful publication and reuse of source datasets.",
+              "gate": true,
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distributed-compute",
+      "title": "Installing the Missing Middle",
+      "kind": "distributed compute and heat-reuse model",
+      "anchor": "Australia",
+      "stage": "Business plan and infrastructure proposal",
+      "summary": "Australian installation federation; investigate replication, supply and international research, not relocation of the Australian programme.",
+      "sourceRepos": [
+        {
+          "name": "installing-the-missing-middle",
+          "url": "https://github.com/auraofintelligence/installing-the-missing-middle"
+        },
+        {
+          "name": "sovereign-capacity-lab",
+          "url": "https://github.com/auraofintelligence/sovereign-capacity-lab"
+        },
+        {
+          "name": "ready-set-co-op-cultural-intelligence-node",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "manufacturing",
+          "scope": "global",
+          "objective": "Identify compute, power and thermal equipment supply partners.",
+          "criteria": [
+            {
+              "id": "supplier",
+              "pattern": "research-and-enterprise",
+              "question": "Name suppliers of server racks, UPS, cooling and heat recovery equipment.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "equipment",
+              "pattern": "enterprise-establishment",
+              "question": "Identify electrical, export/import and equipment conformity constraints for Australian deployment.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Compare landed capital and maintenance cost, currency and support arrangements.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find transferable community compute and useful heat implementations.",
+          "criteria": [
+            {
+              "id": "energy",
+              "pattern": "research-and-enterprise",
+              "question": "Identify credible examples and institutions for heat recovery and community compute.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "governance",
+              "pattern": "collective-ownership",
+              "question": "Investigate local member ownership models without transferring Australian asset control.",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "data",
+              "pattern": "enterprise-establishment",
+              "question": "Identify data sovereignty, energy and local consent requirements.",
+              "gate": true,
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sovereign-materials",
+      "title": "Sovereign Capacity Lab and Extreme Matter Atlas",
+      "kind": "materials, manufacturing and energy research",
+      "anchor": "Australia",
+      "stage": "Scenario and evidence research",
+      "summary": "Related capability scenario models and extreme matter research, grouped for relevant scientific and industrial engagement.",
+      "sourceRepos": [
+        {
+          "name": "sovereign-capacity-lab",
+          "url": "https://github.com/auraofintelligence/sovereign-capacity-lab"
+        },
+        {
+          "name": "extreme-matter-atlas",
+          "url": "https://github.com/auraofintelligence/extreme-matter-atlas"
+        },
+        {
+          "name": "mineral-moonshots",
+          "url": "https://github.com/auraofintelligence/mineral-moonshots"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find materials science, robotics, energy and semiconductor research groups.",
+          "criteria": [
+            {
+              "id": "labs",
+              "pattern": "research-and-enterprise",
+              "question": "Name relevant national labs, universities, facilities and verified expertise in materials, robotics or energy.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "export",
+              "pattern": "enterprise-establishment",
+              "question": "Check applicable research security, export-control and access conditions.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "ip",
+              "pattern": "intellectual-property",
+              "question": "Confirm collaboration, publication and background-IP conditions.",
+              "gate": false,
+              "weight": 4
+            },
+            {
+              "id": "funding",
+              "pattern": "research-and-enterprise",
+              "question": "Identify a named programme whose eligibility fits the proposed work.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solar-swarm",
+      "title": "Virtual Solar Swarm and space-weather research",
+      "kind": "space science and mission-design research",
+      "anchor": "Australia",
+      "stage": "Simulation and research proposal",
+      "summary": "Mission-design studio, solar-system observations and evidence-led space hazard research; not an operational spacecraft network.",
+      "sourceRepos": [
+        {
+          "name": "virtual-solar-swarm",
+          "url": "https://github.com/auraofintelligence/virtual-solar-swarm"
+        },
+        {
+          "name": "micronova-and-excursions",
+          "url": "https://github.com/auraofintelligence/micronova-and-excursions"
+        },
+        {
+          "name": "space-weather-news",
+          "url": "https://github.com/auraofintelligence/space-weather-news"
+        },
+        {
+          "name": "extreme-matter-atlas",
+          "url": "https://github.com/auraofintelligence/extreme-matter-atlas"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find credible space-weather, planetary science and mission-design partners.",
+          "criteria": [
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Name space agencies, university instrument groups or space-weather research programmes with relevant capability.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "export",
+              "pattern": "enterprise-establishment",
+              "question": "Check export-control, remote-sensing, research and mission permissions relevant to proposed collaboration.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "data-ip",
+              "pattern": "intellectual-property",
+              "question": "Confirm data-sharing, publication and instrument-IP conditions.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "manufacturing",
+          "scope": "global",
+          "objective": "Research qualified satellite and scientific instrument suppliers.",
+          "criteria": [
+            {
+              "id": "capability",
+              "pattern": "research-and-enterprise",
+              "question": "Identify demonstrated small-spacecraft, instrument, testing or launch-integration capability.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "permissions",
+              "pattern": "enterprise-establishment",
+              "question": "Identify export/import, space licensing and safety approvals for the specific work.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Find credible development and testing cost evidence.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandworm",
+      "title": "Sandworm Subterranean Systems and Civilisation of Sand",
+      "kind": "place-based infrastructure and long-horizon research",
+      "anchor": "Minjerribah and Moreton Bay",
+      "stage": "Concept and simulation",
+      "summary": "Australian local engineering and generational city concept; international collaboration concerns engineering methods, materials and resilient systems, not moving the site.",
+      "sourceRepos": [
+        {
+          "name": "sandworm-subterranean-systems",
+          "url": "https://github.com/auraofintelligence/sandworm-subterranean-systems"
+        },
+        {
+          "name": "civilisation-of-sand",
+          "url": "https://github.com/auraofintelligence/civilisation-of-sand"
+        },
+        {
+          "name": "grain-by-grain",
+          "url": "https://github.com/auraofintelligence/grain-by-grain"
+        },
+        {
+          "name": "dunwich-gumpi-ferry-terminal-open-data-lab",
+          "url": "https://github.com/auraofintelligence/dunwich-gumpi-ferry-terminal-open-data-lab"
+        },
+        {
+          "name": "straddie-clean-energy-superpower",
+          "url": "https://github.com/auraofintelligence/straddie-clean-energy-superpower"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find tunnelling, groundwater, geotechnical and resilient-infrastructure expertise.",
+          "criteria": [
+            {
+              "id": "engineering",
+              "pattern": "research-and-enterprise",
+              "question": "Name relevant geotechnical, tunnelling, underground utility and material-processing engineering partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "standards",
+              "pattern": "enterprise-establishment",
+              "question": "Check transferability of technical standards, qualifications and contracting to Queensland.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "rights",
+              "pattern": "intellectual-property",
+              "question": "Check access to design methods, patents and licensing terms.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "id": "manufacturing",
+          "scope": "global",
+          "objective": "Explore suitable equipment and material R&D supply for Australian projects.",
+          "criteria": [
+            {
+              "id": "equipment",
+              "pattern": "research-and-enterprise",
+              "question": "Name qualified tunnelling, utility installation, geotechnical monitoring or material-processing suppliers.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "safety",
+              "pattern": "enterprise-establishment",
+              "question": "Verify export, Australian conformity and qualified installation/support requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Obtain credible equipment, service and transport costs.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local-energy",
+      "title": "Straddie Clean Energy and community asset systems",
+      "kind": "local energy infrastructure",
+      "anchor": "Minjerribah",
+      "stage": "Research proposal",
+      "summary": "Local community asset and energy options; international engagement is technology transfer and research only.",
+      "sourceRepos": [
+        {
+          "name": "straddie-clean-energy-superpower",
+          "url": "https://github.com/auraofintelligence/straddie-clean-energy-superpower"
+        },
+        {
+          "name": "moreton-bay-community-wealth-and-mutuals",
+          "url": "https://github.com/auraofintelligence/moreton-bay-community-wealth-and-mutuals"
+        },
+        {
+          "name": "straddie-makerspace-lab",
+          "url": "https://github.com/auraofintelligence/straddie-makerspace-lab"
+        },
+        {
+          "name": "straddie-tip-loop-lab",
+          "url": "https://github.com/auraofintelligence/straddie-tip-loop-lab"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Find sand-based thermal storage, community energy and circular materials research.",
+          "criteria": [
+            {
+              "id": "technology",
+              "pattern": "research-and-enterprise",
+              "question": "Name tested thermal storage, microgrid or renewable-energy research and equipment partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "transfer",
+              "pattern": "enterprise-establishment",
+              "question": "Check transferability to Australian electricity, environmental and planning requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "ownership",
+              "pattern": "collective-ownership",
+              "question": "Identify cooperative/community asset structures as research comparators, not offshore asset owners.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutual-futures",
+      "title": "Mutual Futures and C-Hour",
+      "kind": "member ownership and voluntary contribution research",
+      "anchor": "Australia; local groups retain governance",
+      "stage": "Public proposal",
+      "summary": "Member-owned productive assets and voluntary human contribution. C-Hours record verified voluntary hours only; no monetary conversion, asset or wage substitution.",
+      "sourceRepos": [
+        {
+          "name": "mutual-futures",
+          "url": "https://github.com/auraofintelligence/mutual-futures"
+        },
+        {
+          "name": "C-Hour-introduction",
+          "url": "https://github.com/auraofintelligence/C-Hour-introduction"
+        },
+        {
+          "name": "moreton-bay-community-wealth-and-mutuals",
+          "url": "https://github.com/auraofintelligence/moreton-bay-community-wealth-and-mutuals"
+        },
+        {
+          "name": "ready-set-co-op-trust-hub",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-trust-hub"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "community",
+          "scope": "global",
+          "objective": "Compare mutual and cooperative structures and locally led adaptation.",
+          "criteria": [
+            {
+              "id": "forms",
+              "pattern": "collective-ownership",
+              "question": "Identify cooperative and mutual legal structures, governance and foreign participation rules.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "contribution",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm that voluntary time recording cannot substitute for wages or regulated benefits.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "finance",
+              "pattern": "financial-infrastructure",
+              "question": "Identify regulated insurance, investment and financial service boundaries separately.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "examples",
+              "pattern": "research-and-enterprise",
+              "question": "Find relevant member-owned transition and succession examples.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oceania-wellbeing",
+      "title": "Oceania healthy co-operative pathways",
+      "kind": "regional community wellbeing research",
+      "anchor": "Oceania",
+      "stage": "Public proposal",
+      "summary": "Locally governed wellbeing spaces, self-reflection, community compute and consent-based care relationships.",
+      "sourceRepos": [
+        {
+          "name": "Oceania-healthy-de-slop-co-ops",
+          "url": "https://github.com/auraofintelligence/Oceania-healthy-de-slop-co-ops"
+        },
+        {
+          "name": "ready-set-co-op-trust-hub",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-trust-hub"
+        },
+        {
+          "name": "aura-whole-of-life",
+          "url": "https://github.com/auraofintelligence/aura-whole-of-life"
+        },
+        {
+          "name": "aura-genesis-geode-atlas",
+          "url": "https://github.com/auraofintelligence/aura-genesis-geode-atlas"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "community",
+          "scope": "oceania",
+          "objective": "Explore independent locally governed cooperative pilots across the region.",
+          "criteria": [
+            {
+              "id": "structure",
+              "pattern": "collective-ownership",
+              "question": "Identify a locally suitable cooperative or association, consent and member control requirements.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "care",
+              "pattern": "enterprise-establishment",
+              "question": "Check health, care, equipment and privacy regulation for the proposed local programme.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify local organisations willing to co-design a pilot.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "budget",
+              "pattern": "financial-infrastructure",
+              "question": "Check actual funding eligibility and operating costs.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative-production",
+      "title": "i C. infinity and Infinity Engine",
+      "kind": "creative production and cultural exchange",
+      "anchor": "Australia",
+      "stage": "Public catalogue and production tools",
+      "summary": "Music, multimedia production, training and cultural events; distinguish original works from production software and local events.",
+      "sourceRepos": [
+        {
+          "name": "i-C-infinity-music-universe",
+          "url": "https://github.com/auraofintelligence/i-C-infinity-music-universe"
+        },
+        {
+          "name": "infinity-engine",
+          "url": "https://github.com/auraofintelligence/infinity-engine"
+        },
+        {
+          "name": "infinity-creative-workshop",
+          "url": "https://github.com/auraofintelligence/infinity-creative-workshop"
+        },
+        {
+          "name": "explorer-music-video-lab",
+          "url": "https://github.com/auraofintelligence/explorer-music-video-lab"
+        },
+        {
+          "name": "infinity-content-engine",
+          "url": "https://github.com/auraofintelligence/infinity-content-engine"
+        },
+        {
+          "name": "grain-by-grain-documentary",
+          "url": "https://github.com/auraofintelligence/grain-by-grain-documentary"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "cultural-collaboration",
+          "scope": "global",
+          "objective": "Find creative collaborators, venues and cultural exchange partners.",
+          "criteria": [
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Name credible arts, music, film, training or distribution partners.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "rights",
+              "pattern": "intellectual-property",
+              "question": "Check music, image, performance and cultural rights for the specific material.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "activity",
+              "pattern": "enterprise-establishment",
+              "question": "Check visa/activity and performance or local commercial permissions.",
+              "gate": true,
+              "weight": 4
+            },
+            {
+              "id": "cost",
+              "pattern": "financial-infrastructure",
+              "question": "Estimate real production, distribution, travel and rights costs.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "withheld": [
+    {
+      "name": "Australian civic and political systems",
+      "reason": "Australian policy jurisdiction; independent overseas cultural/civic partnerships require their own purpose and consent. Do not rank P4A for offshore incorporation."
+    },
+    {
+      "name": "Minjerribah facilities, clubs and locally held assets",
+      "reason": "Local facilities stay local. International replication is a distinct locally led activity, not foreign ownership of Sandy Sports Club, Laurelin or other island assets."
+    },
+    {
+      "name": "Foundational intellectual-property custodianship",
+      "reason": "Proposed governance and mission-lock arrangements need founder and legal review before any international domicile comparison."
+    },
+    {
+      "name": "Earlier prototypes, personal records, tooling, placeholders and unreviewed repositories",
+      "reason": "Retained in Project Atlas but not treated as separate overseas ventures."
+    }
+  ],
+  "researchLeads": [
+    {
+      "projectId": "founder-mobility",
+      "pathway": "digital-identity",
+      "placeId": "ee",
+      "placeName": "Estonia",
+      "question": "Investigate established e-residency and remote company administration; confirm fees, collection and eligible services.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "founder-mobility",
+      "pathway": "digital-identity",
+      "placeId": "kz",
+      "placeName": "Kazakhstan",
+      "question": "Prior programme lead requires direct verification: upstream none-found is not proof of absence.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "founder-mobility",
+      "pathway": "digital-identity",
+      "placeId": "pw",
+      "placeName": "Palau",
+      "question": "Investigate actual scope and renewal of the digital ID; separate it from residence and company rights.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "founder-mobility",
+      "pathway": "digital-identity",
+      "placeId": "lt",
+      "placeName": "Lithuania",
+      "question": "Check nonresident e-ID access, collection and current total application cost.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "founder-mobility",
+      "pathway": "personal-residency",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Verify Australian passport holder residence route and retention, tax and citizenship distinctions.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "founder-mobility",
+      "pathway": "personal-residency",
+      "placeId": "py",
+      "placeName": "Paraguay",
+      "question": "Check actual temporary/permanent residency steps, documents, fees and presence.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "aura-platform",
+      "pathway": "incorporation",
+      "placeId": "ee",
+      "placeName": "Estonia",
+      "question": "Compare software administration costs and cross-border data/IP requirements with Australian ownership.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "aura-platform",
+      "pathway": "research",
+      "placeId": "ee",
+      "placeName": "Estonia",
+      "question": "Identify named digital governance, HCI and software research partners.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "aura-wearables",
+      "pathway": "manufacturing",
+      "placeId": "tw",
+      "placeName": "Taiwan",
+      "question": "Research specific electronics suppliers; do not assume semiconductor access or medical conformity.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "aura-geode",
+      "pathway": "manufacturing",
+      "placeId": "de",
+      "placeName": "Germany",
+      "question": "Research qualified pressure-vessel suppliers and conformity; separate experimental materials from certified chambers.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "aura-care",
+      "pathway": "research",
+      "placeId": "jp",
+      "placeName": "Japan",
+      "question": "Research named ageing and assistive-technology institutions.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "gajra-earth",
+      "pathway": "community",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Explore independent association models and appropriate local partnerships.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "solar-swarm",
+      "pathway": "research",
+      "placeId": "kz",
+      "placeName": "Kazakhstan",
+      "question": "Investigate relevant space science partners and actual permissions.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "distributed-compute",
+      "pathway": "research",
+      "placeId": "py",
+      "placeName": "Paraguay",
+      "question": "Investigate renewable energy and heat-use feasibility, ownership and infrastructure conditions.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "sandworm",
+      "pathway": "research",
+      "placeId": "fi",
+      "placeName": "Finland",
+      "question": "Investigate relevant underground infrastructure and geotechnical expertise.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "sandworm",
+      "pathway": "research",
+      "placeId": "az",
+      "placeName": "Azerbaijan",
+      "question": "Investigate specific tunnelling and energy engineering partners; no assumption of eligibility.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "mutual-futures",
+      "pathway": "community",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Research cooperative and mutual laws and examples; keep voluntary contribution non-monetary.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "oceania-wellbeing",
+      "pathway": "community",
+      "placeId": "fj",
+      "placeName": "Fiji",
+      "question": "Research locally governed pilots, local consent and health rules.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    }
+  ]
+}
