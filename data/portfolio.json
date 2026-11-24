@@ -1545,6 +1545,135 @@
       ]
     },
     {
+      "id": "ready-set-co-op",
+      "title": "ready SET Co-op",
+      "kind": "sustainable employment and training cooperative",
+      "anchor": "Minjerribah, Australia; independent local replication elsewhere",
+      "stage": "Proposed cooperative and public participation system",
+      "website": "https://ready-setco.auraofintelligence.workers.dev/index.html",
+      "websiteStatus": "Creator-supplied public participation address, corroborated by the related cultural intelligence node and noticeboard READMEs.",
+      "summary": "A proposed cooperative connecting work, learning, media, shared equipment, local services and locally governed compute. International engagement is about independent cooperative adaptation and knowledge exchange, not transferring control of Minjerribah assets or assuming the cooperative has been formed.",
+      "sourceRepos": [
+        {
+          "name": "ready-set-co-op-trust-hub",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-trust-hub"
+        },
+        {
+          "name": "ready-set-co-op-hyperlocal-media",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-hyperlocal-media"
+        },
+        {
+          "name": "ready-set-co-op-cultural-intelligence-node",
+          "url": "https://github.com/auraofintelligence/ready-set-co-op-cultural-intelligence-node"
+        },
+        {
+          "name": "straddie-noticeboard-cloudflare",
+          "url": "https://github.com/auraofintelligence/straddie-noticeboard-cloudflare"
+        },
+        {
+          "name": "C-Hour-introduction",
+          "url": "https://github.com/auraofintelligence/C-Hour-introduction"
+        },
+        {
+          "name": "mutual-futures",
+          "url": "https://github.com/auraofintelligence/mutual-futures"
+        }
+      ],
+      "pathways": [
+        {
+          "id": "community",
+          "scope": "global",
+          "objective": "Investigate locally governed cooperative formation, reciprocal learning and partnership structures.",
+          "criteria": [
+            {
+              "id": "cooperative-law",
+              "pattern": "collective-ownership",
+              "question": "Identify legal cooperative forms, minimum member requirements and foreign participation limits; preserve independent member governance.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "employment",
+              "pattern": "enterprise-establishment",
+              "question": "Confirm employment, training, volunteer and workplace safety obligations for the intended programme.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "partners",
+              "pattern": "research-and-enterprise",
+              "question": "Identify suitable local cooperatives, community organisations and training institutions.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "finance",
+              "pattern": "financial-infrastructure",
+              "question": "Identify applicable funding, accounting, tax and compliance requirements, keeping C-Hours nonmonetary.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        },
+        {
+          "id": "education",
+          "scope": "global",
+          "objective": "Develop locally adapted sustainable employment and practical training collaboration.",
+          "criteria": [
+            {
+              "id": "institutions",
+              "pattern": "research-and-enterprise",
+              "question": "Identify vocational, technical and community training partners with relevant capabilities.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "training-law",
+              "pattern": "enterprise-establishment",
+              "question": "Verify accreditation, permissions, safeguarding and workplace requirements for specific activities.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "learning-ip",
+              "pattern": "intellectual-property",
+              "question": "Check curriculum licensing and local adaptation conditions.",
+              "gate": false,
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "scope": "global",
+          "objective": "Study replicable community-owned media, noticeboard, equipment-sharing and compute infrastructure.",
+          "criteria": [
+            {
+              "id": "model",
+              "pattern": "research-and-enterprise",
+              "question": "Identify documented local shared infrastructure and community technology programmes.",
+              "gate": false,
+              "weight": 5
+            },
+            {
+              "id": "data",
+              "pattern": "enterprise-establishment",
+              "question": "Verify consent, data governance and relevant technical or infrastructure regulation.",
+              "gate": true,
+              "weight": 5
+            },
+            {
+              "id": "member-control",
+              "pattern": "collective-ownership",
+              "question": "Identify locally accountable membership and ownership arrangements.",
+              "gate": false,
+              "weight": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "oceania-wellbeing",
       "title": "Oceania healthy co-operative pathways",
       "kind": "regional community wellbeing research",
@@ -1884,6 +2013,15 @@
       "placeId": "nz",
       "placeName": "New Zealand",
       "question": "Investigate locally led participatory planning and civic consultation partnerships, with community and Indigenous authority respected.",
+      "status": "research-lead",
+      "reviewedOn": "2026-11-24"
+    },
+    {
+      "projectId": "ready-set-co-op",
+      "pathway": "community",
+      "placeId": "nz",
+      "placeName": "New Zealand",
+      "question": "Investigate independent local cooperative formation and vocational partnership models; local communities retain their own decisions.",
       "status": "research-lead",
       "reviewedOn": "2026-11-24"
     }
