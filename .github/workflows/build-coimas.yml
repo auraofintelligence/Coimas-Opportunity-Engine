@@ -1,0 +1,97 @@
+name: Build Coimas opportunity data
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/portfolio.json'
+      - '*.mjs'
+      - '*.html'
+      - '*.css'
+      - 'favicon.svg'
+      - 'LICENCE.md'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '.github/workflows/build-coimas.yml'
+  schedule:
+    - cron: '45 20 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: coimas-public-data
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: coimas
+      - uses: actions/checkout@v4
+        with:
+          repository: auraofintelligence/project-atlas
+          path: atlas
+          sparse-checkout: data/projects.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: auraofintelligence/world-travel-patterns
+          path: travel
+          sparse-checkout: |
+            data/places/spine.json
+            data/vetting/
+            patterns/
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test and generate dataset
+        working-directory: coimas
+        run: |
+          node tests.mjs
+          node --check app.mjs
+          node build.mjs --atlas ../atlas --travel ../travel --out "$RUNNER_TEMP/coimas-data.json"
+      - name: Commit meaningful data changes
+        working-directory: coimas
+        run: |
+          mkdir -p generated
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const target="generated/dataset.json";
+            const candidate=process.env.RUNNER_TEMP+"/coimas-data.json";
+            const next=JSON.parse(fs.readFileSync(candidate,"utf8"));
+            const material=d=>JSON.stringify([d.schemaVersion,d.portfolio,d.places]);
+            if(!fs.existsSync(target)||material(JSON.parse(fs.readFileSync(target,"utf8")))!==material(next)) fs.copyFileSync(candidate,target);
+          '
+          git add generated/dataset.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'coimas-data-bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh curated Coimas public dataset'
+            git push origin HEAD:main
+          fi
+      - name: Stage public site
+        working-directory: coimas
+        run: |
+          mkdir -p "$RUNNER_TEMP/coimas-site/generated"
+          cp index.html styles.css app.mjs engine.mjs favicon.svg LICENCE.md robots.txt sitemap.xml site-map.html "$RUNNER_TEMP/coimas-site/"
+          cp generated/dataset.json "$RUNNER_TEMP/coimas-site/generated/"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/coimas-site
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy public explorer
+        id: deployment
+        uses: actions/deploy-pages@v4
