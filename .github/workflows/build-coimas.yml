@@ -65,6 +65,7 @@ jobs:
         run: |
           node tests.mjs
           node --check app.mjs
+          node scripts/validate_pages.mjs
           node build.mjs --atlas ../atlas --travel ../travel --out "$RUNNER_TEMP/coimas-data.json"
           python scripts/no_em_dashes.py "$RUNNER_TEMP/coimas-data.json"
       - name: Commit meaningful data changes
@@ -91,7 +92,7 @@ jobs:
         working-directory: coimas
         run: |
           mkdir -p "$RUNNER_TEMP/coimas-site/generated"
-          cp index.html styles.css app.mjs engine.mjs favicon.svg LICENCE.md robots.txt sitemap.xml site-map.html "$RUNNER_TEMP/coimas-site/"
+          cp index.html portfolio.html projects.html jurisdictions.html compare.html budget.html research.html methodology.html site-map.html styles.css app.mjs engine.mjs favicon.svg LICENCE.md robots.txt sitemap.xml "$RUNNER_TEMP/coimas-site/"
           cp generated/dataset.json "$RUNNER_TEMP/coimas-site/generated/"
       - uses: actions/upload-pages-artifact@v3
         with:
