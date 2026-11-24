@@ -19,5 +19,17 @@ for(const k of PATTERNS){const d=await read(join(travel,"patterns",k+".json"));i
 for(const p of spine.places){if(!/^[a-z0-9][a-z0-9/_-]*$/i.test(p.id))throw Error("Invalid place identifier");const x=await maybe(join(travel,"data/vetting",p.id.replaceAll("/","__")+".json"));if(x)vetting[p.id]=x}
 const dataset=buildDataset(portfolio,atlas,spine,vetting,baselines,today,{atlas:rev(atlasRoot),travel:rev(travel)});
 await mkdir(dirname(out),{recursive:true});
-await writeFile(out,JSON.stringify(dataset)+"\n");
+// Normalise display punctuation without changing the original upstream files.
+const cleanText=value=>{
+  const dash=String.fromCodePoint(8212);
+  const token=new RegExp(dash+"|&m"+"dash;|&#0*8212;|&#x0*2014;","gi");
+  if(typeof value==="string"){
+    if(/^https?:\/\//i.test(value))return value.replaceAll(dash,encodeURIComponent(dash));
+    return value.replace(token,"-");
+  }
+  if(Array.isArray(value))return value.map(cleanText);
+  if(value&&typeof value==="object")return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,cleanText(v)]));
+  return value;
+};
+await writeFile(out,JSON.stringify(cleanText(dataset))+"\n");
 console.log(JSON.stringify({initiatives:portfolio.projects.length,jurisdictions:dataset.places.length,pathways:portfolio.projects.reduce((n,p)=>n+p.pathways.length,0),sourceRecords:dataset.places.reduce((n,j)=>n+Object.values(j.records).filter(r=>r.status!=="unknown").length,0),versions:dataset.versions}));
